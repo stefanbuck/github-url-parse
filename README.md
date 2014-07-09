@@ -14,8 +14,9 @@ $ npm install --save github-url-parse
 ## Usage
 
 ```javascript
-var githubUrlParse = require('github-url-parse');
-var github = githubUrlParse('https://github.com/stefanbuck/github-url-parse/blob/master/lib/index.js');
+var gitHubUrlParse = require('github-url-parse');
+
+var github = gitHubUrlParse('https://github.com/stefanbuck/github-url-parse/blob/master/lib/index.js');
 
 console.log('user:' + github.user); // stefanbuck
 console.log('repo:' + github.repo); // github-url-parse
