@@ -1,0 +1,38 @@
+{
+  "name": "github-url-parse",
+  "description": "Parse a GitHub url",
+  "version": "0.1.0",
+  "homepage": "https://github.com/stefanbuck/github-url-parse",
+  "bugs": "https://github.com/stefanbuck/github-url-parse/issues",
+  "license": "MIT",
+  "main": "lib/github-url-parse.js",
+  "author": {
+    "name": "Stefan Buck",
+    "email": "dev@stefanbuck.com",
+    "url": "http://stefanbuck.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanbuck/github-url-parse"
+  },
+  "keywords":[],
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-util": "2.2.16",
+    "gulp-bump": "^0.1.8",
+    "gulp-jscs": "^0.4.2",
+    "gulp-jshint": "^1.5.5",
+    "gulp-mocha": "^0.4.1",
+    "gulp-istanbul": "^0.2.0",
+    "coveralls": "^2.10.0",
+    "should": "^3.3.1",
+    "jshint-stylish": "^0.2.0",
+    "gulp-load-plugins": "^0.5.1",
+    "gulp-plumber": "^0.6.2"
+  },
+  "scripts": {
+    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "gulp test"
+  }
+}
