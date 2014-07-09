@@ -1,7 +1,7 @@
 # github-url-parse 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image] [![Coverage Status][coveralls-image]][coveralls-url]
 
-The best module ever.
+Parse the github user, repo, branch and other things from a GitHub url.
 
 
 ## Install
@@ -15,22 +15,14 @@ $ npm install --save github-url-parse
 
 ```javascript
 var githubUrlParse = require('github-url-parse');
-githubUrlParse.awesome(); // "awesome"
+var github = githubUrlParse('https://github.com/stefanbuck/github-url-parse/blob/master/lib/index.js');
+
+console.log('user:' + github.user); // stefanbuck
+console.log('repo:' + github.repo); // github-url-parse
+console.log('branch:' + github.branch); // master
+console.log('path:' + github.path); // lib/index.js
+console.log('type:' + github.type); // blob
 ```
-
-## API
-
-_(Coming soon)_
-
-
-## Contributing
-
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [gulp](http://gulpjs.com/).
-
-
-## Release History
-
-_(Nothing yet)_
 
 
 ## License

@@ -1,6 +1,6 @@
 {
   "name": "github-url-parse",
-  "description": "Parse a GitHub url",
+  "description": "Parse the github user, repo, branch and other things from a GitHub url.",
   "version": "0.1.0",
   "homepage": "https://github.com/stefanbuck/github-url-parse",
   "bugs": "https://github.com/stefanbuck/github-url-parse/issues",
